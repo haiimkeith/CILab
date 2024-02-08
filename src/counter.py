@@ -35,4 +35,3 @@ def get_counter(name):
     if name in COUNTERS:
         return {name: COUNTERS[name]}, status.HTTP_200_OK
     return {"Message": f"Counter {name} does not exist"}, status.HTTP_409_CONFLICT
-    
