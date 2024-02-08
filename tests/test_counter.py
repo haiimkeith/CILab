@@ -60,4 +60,4 @@ class CounterTest(TestCase):
     self.assertEqual(result.status_code, status.HTTP_200_OK)
 
     result = self.client.get('/counters/doesntexist')
-    self.assertEqual(result.status_code, status.HTTP_409_CONFLICT) 
+    self.assertEqual(result.status_code, status.HTTP_409_CONFLICT)
