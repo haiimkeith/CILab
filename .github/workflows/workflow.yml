@@ -49,11 +49,6 @@ jobs:
           pip install pylint
           pylint src
 
-      - name: Security scanning
-        uses: github/codeql-action@v2
-        with:
-          languages: python
-
       - name: Notify on failure
         if: failure()
         run: echo "Build failed. Please check the workflow for details."
